@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <title>desperate-step</title>
+    <link rel="icon" href="new-empare.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <link href="desperate-step.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="black">
+        <header>
+            <div class="navbar"> 
+                <div class="logo"><p>Desperate-step</p></div>              
+                    <ul class="links">
+                    <li><a href="https://www.favicon.cc/">Icons</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <a href="#" class="start_button">Get started</a>
+                <button href="#"  class="toggle_icon"></button>
+            </div>
+            <div class="dropdown-menu">
+                <li><a href="https://www.favicon.cc/">Icons</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="start_button">Get started</a></li>
+            </div>
+        </header>
+    </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_icon')
+            const toggleBtnicon = document.querySelector('.toggle_icon i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+            }
+            document.addEventListener("click",
+        function(event) {
+            if(!
+        dropdownMenu.contains(event.target
+    ) && !
+toggleBtn.contains(event.target))
+{
+    dropdownMenu.classList.remove('open');
+}
+        })
+        </script>
+
+
+    </body>
+</html>
