@@ -1,0 +1,271 @@
+<!Doctype html>
+<html lang="en">
+    <title>Business solution</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <link href="plan.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="black">
+        <header>
+            <div class="navbar"> 
+                <div class="icon-container"><img src="MU.png"></div>
+                <span>Muhammadarry</span>
+                    <ul class="links">
+                    <li><a href="#" class="About">About us</a></li>
+                    <p href="#" class="services">Our services</p>
+                    <button class="ico" href="#"></button>
+                </ul>
+
+               
+<!--THE "laguage-change-buttons" ON the main page-->
+                <div class="wrap">
+                    <button data-lang="english" class="lang-button">EN</button>
+                    <button data-lang="russian" class="lang-button">RU</button>
+                </div>
+                <button class="start_button">Contact us</button>
+                <div href="#"  class="toggle_icon"></div>
+                <div class="close-menu" style="display: none;"></div>
+
+            </div>
+
+
+<!-- THE "dropdown-arrow" list -->              
+<div class="dropdown-arrow">
+    <div class="wrap">
+        <button data-lang="english" class="lang-button">EN</button>
+        <button data-lang="russian" class="lang-button">RU</button>
+    </div>
+    <div class="inside">
+        <li><a href="#" class="social">Social media Managment</a></li>
+        <li><a href="#" class="targ">Target Advertisement</a></li>
+        <li><a href="#" class="brand">Branding</a></li>
+        <li><a href="#" class="email">Email marketing</a></li>
+    </div>
+    </div>
+
+
+<!--THe "dropdown-menu" list-->
+            <div class="dropdown-menu">
+               
+                <div class="wrap">
+                    <button data-lang="english" class="lang-button">EN</button>
+                    <button data-lang="russian" class="lang-button">RU</button>
+                </div>
+                <div class="third">
+                    <div class="icon-container"><img src="MU.png"></div>
+                    <span>Muhammadarry</span>    
+                    </div>
+                <div class="box">
+                <li><a href="#" class="us">About us</a></li>
+                <div class="box2">
+                <p class="se">Our services</p>
+                <button class="ico2" href="#"></button>
+            </div>
+            </div>
+       <!--The dropdown-arrow2 inside dropdown-menu -->
+       <div class="dropdown-arrow2">
+        <div class="wrap">
+            <button data-lang="english" class="lang-button">EN</button>
+            <button data-lang="russian" class="lang-button">RU</button>
+        </div>
+        <div class="inside2">
+            <li><a href="#" class="social2">Social media Managment</a></li>
+            <li><a href="#" class="targ2">Target Advertisement</a></li>
+            <li><a href="#" class="brand2">Branding</a></li>
+            <li><a href="#" class="email2">Email marketing</a></li>
+        </div>
+        </div>
+      
+            </div>
+        </header>
+    </div>
+</div>
+<!--This part of the html code is for the "BODY" part-->
+<div class="main">
+            <div class="one">
+
+                 <p class="intro">Provide the Best Solutions to</p>
+                 <p class="intro2">Improve  your Business</p>
+
+            </div>
+
+         <div class="second">
+            <p class="intro3">
+            We are a creative and driven team of professionals passionate about the art of 
+            creating unique marketing solutions. Our story began when we decided to 
+            combine our talents and knowledge to help businesses reach new heights in 
+            marketing.
+            </p>
+         </div>
+</div>
+
+
+        <script>
+
+
+/* The js code for "dropdown-arrow2 to open the window with the list"*/
+            const toggleBn2 = document.querySelector('.ico2')
+            const toggleBtnico2 = document.querySelector('.ico2 i')
+            const dropdownArrow2 = document.querySelector('.dropdown-arrow2')
+
+            toggleBn2.onclick = function () {
+                dropdownArrow2.classList.toggle('open')
+            };
+            document.addEventListener("click",
+                    function(event) {
+                        if(!
+                    dropdownArrow2.contains(event.target
+                ) && !
+            toggleBn2.contains(event.target))
+            {
+                dropdownArrow2.classList.remove('open');
+            }
+                    });
+
+/*The JS code for "dropdown-arrow"  to open the window with the list*/
+            const toggleBn = document.querySelector('.ico')
+            const toggleBtnico = document.querySelector('.ico i')
+            const dropdownArrow = document.querySelector('.dropdown-arrow')
+
+            toggleBn.onclick = function () {
+                dropdownArrow.classList.toggle('open')
+            };
+            document.addEventListener("click",
+                    function(event) {
+                        if(!
+                    dropdownArrow.contains(event.target
+                ) && !
+            toggleBn.contains(event.target))
+            {
+                dropdownArrow.classList.remove('open');
+            }
+                    })
+            
+
+      
+document.querySelector('.toggle_icon').addEventListener('click', function() {
+    
+    document.querySelector('.toggle_icon').style.display = 'none';
+    document.querySelector('.close-menu').style.display = 'block';
+});
+
+
+document.querySelector('.close-menu').addEventListener('click', function() {
+    
+    document.querySelector('.toggle_icon').style.display = 'block';
+    document.querySelector('.close-menu').style.display = 'none';
+});
+
+
+
+
+
+
+
+
+            const toggleBtn = document.querySelector('.toggle_icon')
+            const toggleBtnicon = document.querySelector('.toggle_icon i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+
+            toggleBtn.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+            };
+            document.addEventListener("click",
+                    function(event) {
+                        if(!
+                    dropdownMenu.contains(event.target
+                ) && !
+            toggleBtn.contains(event.target))
+            {
+                dropdownMenu.classList.remove('open');
+            }
+                    })
+            
+            const langButtons = document.querySelectorAll('.lang-button');
+            const AboutEl = document.querySelector('.About');
+            const startEl = document.querySelector('.start_button');
+            const seEl =document.querySelector('.se');
+            const socialEl = document.querySelector('.social');
+            const social2El = document.querySelector('.social2');
+            const targ2El = document.querySelector('.targ2');
+            const brend2El = document.querySelector('.brand2');
+            const email2El = document.querySelector('.email2');
+            const servicesEl = document.querySelector('.services');
+            const targEl = document.querySelector('.targ');
+            const brendEl = document.querySelector('.brand');
+            const emailEl = document.querySelector('.email');
+            const introEl = document.querySelector('.intro');
+            const intro2El = document.querySelector('.intro2');
+            const intro3El = document.querySelector('.intro3');
+            const usEl = document.querySelector('.us');
+            langButtons.forEach(button => {
+                button.addEventListener('click',() => {
+                    const selectedLang = button.getAttribute('data-lang');
+                    AboutEl.textContent = data[selectedLang].About;
+                    servicesEl.textContent = data[selectedLang].services;
+                    startEl.textContent = data[selectedLang].start_button;
+                    usEl.textContent = data[selectedLang].us;
+                    social2El.textContent = data[selectedLang].social2;
+                    targ2El.textContent = data[selectedLang].targ2;
+                    brend2El.textContent = data[selectedLang].brand2;
+                    email2El.textContent = data[selectedLang].email2;
+                    socialEl.textContent = data[selectedLang].social;
+                    targEl.textContent = data[selectedLang].targ;
+                    brendEl.textContent = data[selectedLang].brand;
+                    emailEl.textContent = data[selectedLang].email;
+                    introEl.textContent = data[selectedLang].intro;
+                    intro2El.textContent = data[selectedLang].intro2;
+                    intro3El.textContent = data[selectedLang].intro3;
+                    seEl.textContent = data[selectedLang].se;
+                });
+                });
+
+
+            var data ={
+                "english":
+                {
+                    "About": "About us",
+                    "services": "Our services",
+                    "start_button": "Contact us",
+                    "us": "About us",
+                    "se": "Our services",
+                    "social": "Social media Managment",
+                    "targ" : "Target Advertisement",
+                    "brand" : "Branding",
+                    "email" : "Email marketing",
+                    "social2": "Social media Managment",
+                    "targ2" : "Target Advertisement",
+                    "brand2" : "Branding",
+                    "email2" : "Email marketing",
+                    "intro" : "Provide the Best Solutions to",
+                    "intro2" : "Improve your Business",
+                    "intro3" : "We are a creative and driven team of professionals passionate about the art of creating unique marketing solutions. Our story began when we decided to combine our talents and knowledge to help businesses reach new heights in marketing."
+                },
+                "russian":
+                {
+                    "About": "О нас",
+                    "services": "Наши услуги",
+                    "start_button": "Связаться",
+                    "us": "О нас",
+                    "se": "Наши услуги",
+                    "social": "Управление социальными сетями",
+                    "targ" : "Целевая реклама",
+                    "brand" : "Создание и продвижение бренда",
+                    "email" : "Почтовый маркетинг",
+                    "social2": "Управление социальными сетями",
+                    "targ2" : "Целевая реклама",
+                    "brand2" : "Создание и продвижение бренда",
+                    "email2" : "Почтовый маркетинг",
+                    "intro" : "Предоставляем лучшие решения",
+                    "intro2" : "для Улучшения твоего Бизнесса",
+                    "intro3" : "Мы - творческая и целеустремленная команда профессионалов, увлеченных искусством создания уникальных маркетинговых решений. Наша история началась с того, что мы решили объединить наши таланты и знания, чтобы помочь бизнесу достичь новых высот в маркетинге."
+                }
+            }
+        
+    </script>
+    </body>
+</html>
