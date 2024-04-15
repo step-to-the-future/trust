@@ -1,0 +1,488 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 'Open sans', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+.hello{
+    margin-bottom: 60px;
+}
+.black{
+    background-color:rgb(3, 24, 44);
+}
+.navbar .icon-container {
+    display: flex;
+    align-items: center;
+}
+.navbar .icon-container img{
+   width: 65px;
+   margin-left: -6rem;
+   height: 60px;
+}
+.navbar .services{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin-top: 1px;
+}
+.navbar .close-menu {
+    background-image:  url(up.ico);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20%;
+    margin-right: 20px; 
+    cursor: pointer;
+    z-index: 999;
+    
+}
+
+.navbar  span{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: -30rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+header{
+    position: relative;
+    padding: 6px;
+}
+.navbar{
+    width: 100%;
+    height: 90px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.links{
+    margin-right: -27rem;
+}
+.navbar .links{
+    display: flex;
+    gap: 3rem;
+}
+ 
+ .start_button{
+    background-color: rgb(99, 153, 214);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: -34rem;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 8px;
+ }
+ .start_button:hover{
+    scale: 1.02;
+ }
+ .lang-button{
+    font-size: 18px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ .lang-button:hover{
+    color: red;
+ }
+ .wrap{
+    margin-right: -28rem;
+    margin-top: 6px;
+ }
+ 
+ .navbar .wrap{
+    gap: 6px;
+    display: flex;
+ }
+ .dropdown-menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    background-color: rgb(15, 62, 94);
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s ease;
+ }
+
+
+
+
+/*The list inside of the dropdown-arrow*/
+.navbar .ico{
+    margin-left: -40px;
+    margin-top: 5px;
+    background-image: url(bird2.ico);
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ico:hover{
+    background-image: url(bird3.ico);
+    scale: 1.2;
+}
+.ico{
+    background: transparent;
+    border: none;
+}
+ .dropdown-arrow{
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    width: auto;
+    right: 13rem;
+    background-color:  rgb(15, 62, 94);
+    visibility: hidden;
+}
+ .dropdown-arrow.open{
+    height: 205px;
+    top: 105px;
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    visibility: visible;
+}
+.dropdown-arrow li{
+    padding: 0.7rem;
+    align-items: center;
+    display: flex;
+}
+.dropdown-arrow .wrap{
+    display: none;
+}
+.dropdown-arrow a:hover{
+    text-decoration: none;
+}
+
+
+
+ /* Color of texts and links inside od the dropdown-menu*/ 
+ .dropdown-menu .wrap button{
+    color: beige;
+ }
+ .dropdown-menu .wrap button:hover{
+    color: red;
+ }
+ .dropdown-menu .box a{
+    color: beige;
+ }
+ .dropdown-menu a:hover{
+    color: orange;
+ }
+ .box2 p{
+    color: beige;
+    font-size: 25px;
+    font-weight: 700;
+}
+ /*Color of texts and links inside od the dropdown-menu*/ 
+
+
+ .dropdown-menu.open{
+    height: 100vh;
+    left: 0; 
+ }
+.dropdown-menu .box{
+    margin-top: 2rem;
+}
+  .dropdown-menu li{
+     display: block;
+     margin-top: 30px;
+     padding-left: 30px;
+  }
+ .dropdown-menu .wrap{
+    display: flex;
+    gap:1rem;
+   margin-left: 5%;
+   margin-top: 30px;
+   align-items: center;
+
+ }
+.dropdown-menu .third{
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+}
+.third .icon-container img{
+    width: 65px;
+    margin-left: 10rem;
+    height: 60px;
+ }
+ .third span{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: beige;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+}
+/*The whole 'CSS'project  above, is for The header, everything under it, is for the "BODY" part  */ 
+.main{
+    text-align: center;
+}
+.one{
+    margin-top: 180px;
+}
+.one p{
+    font-size: 65px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.second{
+    width: 73%;
+    margin-top: 3rem;
+    margin-left: 11rem;
+}
+.second .intro3{
+    font-size: 32px;
+    color: rgb(44, 43, 43);
+    line-height: 1.3;
+}
+
+ @media(max-width: 992px){
+
+
+    /*The " BODY" part for 992px*/
+    .one{
+        margin-top: 90px;
+    }
+    .one p{
+        font-size: 40px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .second{
+        width: 92%;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .second .intro3{
+        font-size: 22px;
+        color: rgb(44, 43, 43);
+        line-height: 1.3;
+    }
+    /*---------------------------------------*/
+    
+
+
+
+    .navbar .toggle_icon{
+        width: 30px;
+        height: 30px;
+        background-image: url(favicon.ico);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20%;
+        display: none;
+        margin-right: 20px; 
+     }
+     .toggle_icon{
+        background: transparent;
+     }
+
+    .navbar .links,
+    .navbar .start_button{
+        display: none;
+    }
+    .navbar .wrap a{
+        display: none;
+    }
+    .navbar .icon-container img{
+        margin-left: 8rem;
+    }
+    .navbar span{
+        margin-left: -15rem;
+    }
+    .navbar .toggle_icon{
+        display: block;
+        cursor: pointer;   
+    }
+    .dropdown-menu li{
+        margin-top: 45px;
+     }
+    .dropdown-menu .box{
+        margin-top: 6rem;
+    }
+    /* The drop-down inside The "dropdown-menu"*/
+    .dropdown-menu .ico2{
+        background-image: url(bird2.ico);
+        width: 18px;
+        height: 18px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 5px;    
+    }
+    .ico2{
+        background: transparent;
+        border: none;
+    }
+    .dropdown-menu .box2{
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+    .dropdown-menu .ico2:hover{
+        background-image: url(bird3.ico);
+        scale: 1.2;
+    }
+    .dropdown-arrow2 {
+        position: absolute;
+        overflow: hidden;
+        height: 0;
+        visibility: hidden;
+    }
+    .dropdown-arrow2.open{
+        height: 250px;
+        top: 345px;
+        transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        visibility: visible;
+       
+    }
+    .dropdown-arrow2 .wrap{
+        display: none;
+    }
+   
+    .dropdown-arrow2 a:hover{
+        text-decoration: none;
+    }
+    .dropdown-arrow2 li{
+        margin-top: 15px;
+    }
+     /*onon*/
+    }
+ @media (max-width: 576px){
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+    .navbar .icon-container img{
+        margin-left: 0.5rem;
+    }
+    .navbar span{
+        margin-left: -13rem;
+    }
+ .dropdown-menu{
+    position: fixed;
+    left: -150%;
+    top: 0;
+    width: 100%;
+    background-color:rgb(15, 62, 94);
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s ease;
+ }
+ .dropdown-menu.open{
+    height: 100vh;
+    left: 0; 
+ }
+ .third .icon-container img{
+    width: 65px;
+    margin-left: 5rem;
+    height: 60px;
+ }
+ .third span{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: beige;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    
+}
+.dropdown-menu .third{
+    align-items: center;
+    display: flex;
+    margin-top: 45px;
+}
+.dropdown-menu .box{
+    margin-top: 5rem;
+}
+/*The " BODY" part for 992px*/
+.one{
+    margin-top: 60px;
+}
+.one p{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.second{
+    width: 85%;
+    margin-top: 1.5rem;
+    margin-left: 2.9rem;
+}
+.second .intro3{
+    font-size: 18px;
+    color: rgb(44, 43, 43);
+    line-height: 1.6;
+}
+/*---------------------------------------*/
+}
+@media (max-width: 500px){
+    .navbar .icon-container img{
+        margin-left: 0;
+        width: 50px;
+        height: 45px;
+        
+    }
+    .navbar span{
+        font-size: 28px;
+        padding-left: 6rem;
+    }
+    .third .icon-container img{
+        margin-left: 7px;
+        width: 50px;
+        height: 45px;
+    }
+    .third span{
+        font-size: 28px;
+    }
+   .navbar .wrap{
+    display: none;
+   }
+   .second{
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+}
+   .second .intro3{
+    font-size: 50px;
+    color: rgb(44, 43, 43);
+    line-height: 1.6;
+}
+}
+ 
