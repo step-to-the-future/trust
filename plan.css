@@ -452,7 +452,7 @@ header{
 }
 /*---------------------------------------*/
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
     .navbar .icon-container img{
         margin-left: 0;
         width: 35px;
