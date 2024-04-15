@@ -452,4 +452,24 @@ header{
 }
 /*---------------------------------------*/
 }
+@media (max-width: 330px){
+    .navbar .icon-container img{
+        margin-left: 0;
+        width: 35px;
+        height: 30px;
+        margin-top: -4px;
+    }
+    .navbar span{
+        font-size: 21px;
+    }
+    .third .icon-container img{
+        margin-left: 7px;
+        width: 40px;
+        height: 35px;
+    }
+    .third span{
+        font-size: 21px;
+    }
+   
+}
  
