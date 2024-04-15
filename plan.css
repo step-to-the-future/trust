@@ -472,6 +472,16 @@ header{
    .navbar .wrap{
     display: none;
    }
+         .second{
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+}
+   .second .intro3{
+    font-size: 10px;
+    color: rgb(44, 43, 43);
+    line-height: 1.6;
+}
    
 }
  
