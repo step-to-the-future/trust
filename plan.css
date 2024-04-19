@@ -151,10 +151,6 @@ header{
     background-repeat: no-repeat;
     cursor: pointer;
 }
-.ico:hover{
-    background-image: url(bird3.ico);
-    scale: 1.2;
-}
 .ico{
     background: transparent;
     border: none;
@@ -356,10 +352,6 @@ header{
         padding-left: 30px;
         margin-top: 20px;
     }
-    .dropdown-menu .ico2:hover{
-        background-image: url(bird3.ico);
-        scale: 1.2;
-    }
     .dropdown-arrow2 {
         position: absolute;
         overflow: hidden;
@@ -483,14 +475,45 @@ header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     }
    .second{
-    width: 82%;
+    width: 92%;
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: 8px;
 }
    .second .intro3{
     font-size: 15px;
     color: rgb(44, 43, 43);
     line-height: 1.6;
 }
+    .box2 p{
+    color: beige;
+    font-size: 20px;
+    font-weight: 700;
+}
+.dropdown-menu .box a{
+    color: beige;
+    font-size: 20px;
+ }
+ .dropdown-menu .ico2{
+    background-image: url(bird2.ico);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 5px;    
+}
+.dropdown-arrow2 a{
+    font-size: 15px;
+}
+.dropdown-arrow2.open{
+    height: 250px;
+    top: 305px;
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    visibility: visible;
+}
+    .dropdown-arrow2 li{
+        margin-top: 8px;
+    }
 }
  
