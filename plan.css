@@ -6,7 +6,7 @@
     font-size: 'Open sans', sans-serif;
 }
 body{
-    background-color: whitesmoke;
+    background-color: beige;
 }
 .hello{
     margin-bottom: 60px;
@@ -130,7 +130,7 @@ header{
     left: -100%;
     top: 0;
     width: 100%;
-    background-color: rgb(15, 62, 94);
+    background: linear-gradient(rgb(15, 62, 94), rgb(155, 111, 71));
     height: 100vh;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -393,7 +393,7 @@ header{
     left: -150%;
     top: 0;
     width: 100%;
-    background-color:rgb(15, 62, 94);
+    background: linear-gradient(rgb(15, 62, 94), rgb(155, 111, 71));
     height: 100vh;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -470,7 +470,7 @@ header{
     margin-left: -0.5rem;
     }
     .one p{
-    font-size: 18.5px;
+    font-size: 16.5px;
     font-weight: bold;
     font-family:serif;
 }
