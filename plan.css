@@ -467,20 +467,20 @@ header{
     display: none;
    }
     .one{
-    margin-left: -1rem;
+    margin-left: -0.5rem;
     }
     .one p{
-    font-size: 17px;
-    font-weight: 600;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    }
+    font-size: 21px;
+    font-weight: bold;
+    font-family:serif;
+}
    .second{
-    width: 92%;
+    width: 95%;
     margin-top: 1.5rem;
     margin-left: 8px;
 }
    .second .intro3{
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(44, 43, 43);
     line-height: 1.6;
 }
@@ -513,7 +513,10 @@ header{
     visibility: visible;
 }
     .dropdown-arrow2 li{
-        margin-top: 8px;
+        margin-top: 20px;
+    }
+    .dropdown-menu .box{
+        margin-left: -15px;
     }
 }
  
